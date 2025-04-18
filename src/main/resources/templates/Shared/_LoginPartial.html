@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div th:if="${session.user}!=null">
+    <p>Xin chào <th:block th:text="${session.user.getName()}"></th:block></p>
+</div>
+<div th:unless="${session.user}!=null">
+    <a th:href="@{/Identity/Guest/Login}" th:object="${session.user}">
+        Login
+    </a>
+</div>
+
+</body>
+</html>

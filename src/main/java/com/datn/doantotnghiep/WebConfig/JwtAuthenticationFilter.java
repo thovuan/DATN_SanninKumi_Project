@@ -33,6 +33,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
         String authHeader = request.getHeader("Authorization");
         String token = null;
 
+
         // Nếu không có trong header, tìm trong cookie
         if (authHeader == null || !authHeader.startsWith("Bearer ")) {
             Cookie[] cookies = request.getCookies();
@@ -70,6 +71,18 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
         }
 
         filterChain.doFilter(request, response);
+    }
+
+    @Override
+    protected boolean shouldNotFilter(HttpServletRequest request) throws ServletException {
+        String path = request.getServletPath();
+        return path.equals("/login") ||
+                path.equals("/register") ||
+                path.startsWith("/api/auth/") ||
+                path.startsWith("/css/") ||
+                path.startsWith("/js/") ||
+                path.startsWith("/images/") ||
+                path.startsWith("/public/");
     }
 
 }

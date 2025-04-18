@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div th:if="${session.nv}!=null">
+    <p>Xin chào <th:block th:text="${session.nv.getTennhanvien()}"></th:block></p>
+</div>
+<div th:unless="${session.nv}!=null">
+    <a th:href="@{/Identity/Admin/Login}" th:object="${session.nv}">
+        Login
+    </a>
+</div>
+</body>
+</html>

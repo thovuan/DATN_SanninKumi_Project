@@ -1,0 +1,77 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+.quiz-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.question {
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
+    margin: 20px;
+    text-align: center;
+    flex: 1;
+}
+
+.answer-area {
+    width: 100%;
+}
+
+.options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
+    width: 100%;
+}
+
+.option {
+    padding: 40px;
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.option:hover {
+    transform: scale(1.05);
+}
+
+.correct {
+    background-color: #4caf50 !important;
+}
+
+.incorrect {
+    background-color: #f44336 !important;
+}
+
+/* Màu sắc giống Kahoot */
+.option-1 {
+    background-color: #ff3b30;
+}
+.option-2 {
+    background-color: #ff9500;
+}
+.option-3 {
+    background-color: #34c759;
+}
+.option-4 {
+    background-color: #007aff;
+}
+
+.message {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 20px;
+}

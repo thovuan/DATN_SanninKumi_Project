@@ -1,0 +1,29 @@
+#ves-wrapper{
+    width: auto;
+    margin: 0 auto;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+    display: block;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+section {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.offcanvas-pusher {
+    left: 0;
+    width: 100%;
+    left: 0;
+    z-index: 99;
+}
+html, body, .offcanvas-container, .offcanvas-pusher, .offcanvas-content {
+    overflow-x: hidden;
+}

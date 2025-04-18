@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="vi" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Bootstrap 3 template for corporate business" />
+    <title th:text="${title}">Title</title>
+    <base href="/">
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+
+    >
+
+    <link rel="stylesheet" href="/static/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/static/css/site.css"  />
+    <link rel="stylesheet" th:href="@{/css/Header.css}">
+</head>
+<body>
+<body data-rsssl="1" class="page-template-default page page-id-180889 wpb-js-composer js-comp-ver-6.9.0 vc_responsive elementor-default elementor-kit-298464 sticky-menu" style>
+
+<div id="page" class="site">
+    <!-- start header -->
+    <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+    <header class="main_header" style="background-color: rgba(39,47,84,1);color: #ffffff;">
+        <div class="top_header_wrapper">
+            <div class="container">
+                <div class="top_header">
+                    <div class="top_header_left header_bar">
+                        <div class="wrapper">
+
+                            <div id="text-10" class="widget_text">
+                                <div class="textwidget">
+                                    <th:block th:include="/Shared/_StaffIdentityPartial :: body"></th:block>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top_header_right header_bar">
+                        <div class="wrapper">
+                            <div class="menu-top-right">
+                                <nav class="main-menu unuppercase-menu">
+                                    <div class="menu-menu-top-right-container">
+                                        <ul id="menu-menu-top-right" class="menu">
+                                            <li id="menu-item-69679"
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-69679">
+                                                <a href="#"><i class="fa fa-envelope"
+                                                               style="padding-right: 10px;"></i>thovuanit2003@gmail.com</a></li>
+                                            <li id="menu-item-69680"
+                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-69680">
+                                                <a href="#"><i class="fa fa-phone"
+                                                               style="padding-right: 10px;"></i>0123456789</a></li>
+                                            <li id="menu-item-69678"
+                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-69678">
+                                                <a href="https://caodang.fpt.edu.vn/lien-he">Liên hệ</a>
+
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                                <div class="header_search" style="height:96px;">
+                                    <div class="header_search__container">
+                                        <div class="header_search__icon"><i></i></div>
+                                        <div class="header_search__inner">
+                                            <form name="search_form" method="get"
+                                                  action="https://caodang.fpt.edu.vn/" class="search_form"
+                                                  _lpchecked="1">
+                                                <label for="search_text"></label>
+                                                <input class="search_text" id="search_text" type="text" name="s"
+                                                       placeholder="Search..." value="">
+                                                <input class="search_submit" type="submit" value="Search">
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom_header_wrapper">
+            <div class="container">
+                <div class="bottom_header empty_center_side">
+                    <div class="Leftalignside header_side">
+                        <div class="header_side_container">
+                            <div class="logo_container"><a href="#"
+                                                           style="max-height:86.4px;">
+                                <img width="182" height="64" class="default_logo2 entered lazyloaded"
+                                     th:src="@{/PIC_INTRO/logo_STL.jpg}" alt="logo"
+                                     style="height:90px;max-height:100px;">
+
+                            </a></div>
+                        </div>
+                    </div>
+                    <div class="Centeralignside header_side"></div>
+                    <div class="Rightalignside header_side">
+                        <div class="header_side_container">
+                            <nav class="main-menu main_menu_container">
+                                <div class="menu-home-container">
+                                    <ul id="primary-menu" class="menu">
+                                        <li id="menu-item-53333"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-53333">
+                                            <a th:href="@{/NeoHome/index}"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+                                        <li id="menu-item-180878"
+                                            class="menu-item menu-item-type-taxonomy menu-item-object-category current-menu-ancestor current-menu-parent menu-item-has-children menu-item-180878">
+                                            <a th:href="@{/QLDONHANG/QLDONHANG/Index}">Quản Lý Đơn Hàng </a>
+
+                                        </li>
+
+                                        <li id="menu-item-53330"
+                                            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-53331">
+                                            <a href="#">Quản Lý Sách</a>
+                                            <ul class="sub-menu">
+                                                <li id="menu-item-46311"
+                                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-46310">
+                                                    <a th:href="@{/QLSACH/Index}">Quản Lý Sách</a></li>
+                                                <li id="menu-item-69786"
+                                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-69785">
+                                                    <a th:href="@{/QLTHELOAI/Index}">Quản Lý Thể Loại</a>
+
+                                                </li>
+
+                                                <li id="menu-item-69787"
+                                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-69785">
+                                                    <a th:href="@{/QLNXB/Index}">Quản Lý NXB</a>
+
+                                                </li>
+
+                                            </ul>
+                                        </li>
+                                        <li id="menu-item-69966"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-69965">
+                                            <a href="#">Quản Lý Tài Khoản</a>
+                                            <ul class="sub-menu">
+                                                <li id="menu-item-170765"
+                                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-170764">
+                                                    <a th:href="@{/QLTK/QLKHACH/Index}">Quản Ly Tài Khoản Khách Hàng</a></li>
+                                                <li id="menu-item-29633"
+                                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-29632">
+                                                    <a href="#">Quản Lý Tài Khoản Công Ty</a>
+                                                    <ul class="sub-menu">
+                                                        <li id="menu-item-29634"
+                                                            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-29632">
+                                                            <a th:href="@{/QLTK/QLTKCT/QLNV/Index}">Quản Ly Tài Khoản Nhân Viên</a>
+                                                        </li>
+                                                        <li id="menu-item-29635"
+                                                            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-29632">
+                                                            <a th:href="@{/QLTK/QLTKCT/QLCV/Index}">Quản Ly Chức Vụ</a>
+                                                        </li>
+                                                    </ul>
+                                            </ul>
+                                        </li>
+
+                                        <li id="menu-item-105320"
+                                            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-105320">
+                                            <a href="#">Thống kê</a>
+                                            <ul class="sub-menu">
+                                                <li id="menu-item-296347"
+                                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-29632">
+                                                    <a th:href="@{/Revenue/All}">Thống kê tổng hợp</a>
+                                                </li>
+                                                <li id="menu-item-296345"
+                                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-69690">
+                                                    <a href="#">Thống kê doanh thu</a>
+                                                    <ul class="sub-menu">
+                                                        <li id="menu-item-2963417"
+                                                            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-29632">
+                                                            <a th:href="@{/QLDONHANG/RevenueStatistics/Index}">Tống kê theo năm</a>
+                                                        </li>
+                                                        <li id="menu-item-29634174"
+                                                            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-29632">
+                                                            <a th:href="@{/QLDONHANG/RevenueStatistics/Index2}">Tống kê theo tháng</a>
+                                                        </li>
+                                                        <li id="menu-item-29634176"
+                                                            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-29632">
+                                                            <a th:href="@{/QLDONHANG/RevenueStatistics/Index3}">Tống kê theo ngày</a>
+                                                        </li>
+                                                    </ul>
+
+                                                </li>
+                                                <li id="menu-item-296356"
+                                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-29632">
+                                                    <a th:href="@{/QLDONHANG/BookRevenue/Index}">Thống kê đầu sách bán ra</a>
+                                                </li>
+
+                                                <li id="menu-item-2963516"
+                                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-29632">
+                                                    <a th:href="@{/Revenue/Blog/Index}">Thống kê hoạt động Blog</a>
+                                                </li>
+                                            </ul>
+
+                                        </li>
+
+                                        <li id="menu-item-69690" th:if="${session.nv!=null}"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-69690">
+                                            <a href="#">Thông tin tài khoản</a>
+                                            <ul class="sub-menu">
+                                                <li id="menu-item-69766"
+                                                    class="menu-item menu-item-type-taxonomy menu-item-object-dmuc-nganh-hoc menu-item-has-children menu-item-69766">
+                                                    <a th:href="@{/Identity/Admin/StaffInformation}">Thông tin tài khoản</a>
+
+                                                </li>
+                                                <li id="menu-item-69768"
+                                                    class="menu-item menu-item-type-taxonomy menu-item-object-dmuc-nganh-hoc menu-item-has-children menu-item-69768">
+                                                    <a th:href="@{/Identity/Admin/Logout}">Đăng Xuất</a>
+
+                                                </li>
+
+                                            </ul>
+                                        </li>
+                                        <li id="menu-item-69691" th:if="${session.nv==null}"
+                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-69690">
+                                            <a href="#">Đăng Nhập</a>
+                                            <ul class="sub-menu">
+                                                <li id="menu-item-69767"
+                                                    class="menu-item menu-item-type-taxonomy menu-item-object-dmuc-nganh-hoc menu-item-has-children menu-item-69766">
+                                                    <a th:href="@{/Identity/Admin/Login}">Đăng Nhập</a>
+
+                                                </li>
+                                                <li id="menu-item-69769"
+                                                    class="menu-item menu-item-type-taxonomy menu-item-object-dmuc-nganh-hoc menu-item-has-children menu-item-69768">
+                                                    <a th:href="@{/Identity/Admin/ChangePassword}">Change Password</a>
+
+                                                </li>
+
+                                                <li id="menu-item-69770"
+                                                    class="menu-item menu-item-type-taxonomy menu-item-object-dmuc-nganh-hoc menu-item-has-children menu-item-69768">
+                                                    <a th:href="@{/Identity/Admin/Register}">Đăng Ký Tài Khoản</a>
+
+                                                </li>
+
+                                            </ul>
+                                        </li>
+                                        <li id="menu-item-53331"
+                                            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-53331">
+                                            <a href="#">Giao Diện</a>
+                                            <ul class="sub-menu">
+                                                <li id="menu-item-46310"
+                                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-46310">
+                                                    <a th:href="@{/Home/index}">Giao Diện của Cửa Hàng</a></li>
+                                                <li id="menu-item-69785"
+                                                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-69785">
+                                                    <a th:href="@{/Identity/Admin/Login}">Giao Diện của Nhân Viên</a>
+
+                                                </li>
+
+                                            </ul>
+                                        </li>
+
+
+
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+
+
+    <div th:fragment="content">
+
+    </div>
+
+
+
+
+
+</div>
+<a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
+
+<!-- Placed at the end of the document so the pages load faster -->
+
+</body>
+</body>
+</html>

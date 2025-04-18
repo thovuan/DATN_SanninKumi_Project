@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="vi" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Thống kê truy cập</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container mt-5">
+    <h2>Thống kê truy cập</h2>
+    <p>Số người đang truy cập: <span id="activeVisitors" th:text="${activeVisitors}"></span></p>
+</div>
+
+<script>
+    var socket = new WebSocket("ws://localhost:8080/ws/visit-stats");
+
+    socket.onmessage = function(event) {
+        document.getElementById("activeVisitors").textContent = event.data.split(": ")[1];
+    };
+</script>
+</body>
+</html>
